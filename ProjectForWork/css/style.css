@@ -80,7 +80,7 @@ body {
   color: #000;
 }
 
-@media (max-width: 555px) {
+@media (max-width: 605px) {
   .header .navbar-burger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -157,6 +157,7 @@ body {
 }
 
 .slider-section {
+  width: 100%;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin: auto;
@@ -165,8 +166,11 @@ body {
       -ms-flex-order: 1;
           order: 1;
 }
+.slider-section .fotorama {
+  width: 100%;
+}
 .slider-section .fotorama img {
-  width: calc(100vw - 20px);
+  max-width: calc(100% - 20px);
 }
 
 .schedule-section {

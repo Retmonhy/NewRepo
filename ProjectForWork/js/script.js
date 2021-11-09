@@ -1,6 +1,7 @@
 const navMenu = document.querySelector('.navbar').children;
 const navUl = navMenu[0];
 
+//навешивание активного класса для ссылки
 let selectedLink = document.querySelector('navbar__link_active');
 navUl.addEventListener('click', (event) => {
 	let target = event.target;
@@ -33,7 +34,7 @@ createElement()
 for(let i = 3; i <= 8; i++){
     createElement(i);
 }
-
+//создание новых элементов-картинок для слайдера
 function createElement(path) {
     let newImage = document.createElement('img');
     newImage.src = `img/${path}.png`;
