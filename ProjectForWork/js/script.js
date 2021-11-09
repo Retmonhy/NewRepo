@@ -25,7 +25,6 @@ function toActive(elem) {
 const menuBtn = document.querySelector('.navbar-burger');
 const navbar = document.querySelector('.navbar');
 menuBtn.addEventListener('click', (event) => {
-	console.log('click');
 	navbar.classList.toggle('navbar_visible');
 }) 
  const myFotorama = document.querySelector('#fotorama');
@@ -38,7 +37,6 @@ for(let i = 3; i <= 8; i++){
 function createElement(path) {
     let newImage = document.createElement('img');
     newImage.src = `img/${path}.png`;
-    console.log(newImage);
     newImage.alt = 'foto';
 
     myFotorama.appendChild(newImage);
@@ -50,7 +48,4 @@ function createElement(path) {
 
     // 2. Get the API object.
     var fotorama = $fotoramaDiv.data('fotorama');
-
-    // 3. Inspect it in console.
-    console.log(fotorama);
 
